@@ -56,12 +56,6 @@ def month_reset(model):
         bank.bad_debts = 0
 
 
-def pay_households(model):
-    """ Households receive thier income """
-    for household in model.households:
-        household.budget += household.budget
-
-
 def collect_debts(model):
     """ 
     Banks collect regular repayments from borrowers 
